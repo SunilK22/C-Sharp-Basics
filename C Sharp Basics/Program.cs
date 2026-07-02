@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using C_Sharp_Basics;
 using System;
 using System.Collections.Generic;
 
@@ -43,11 +44,17 @@ class Program
 
         // ReadLine() method is used to get user inputs from console
         // but it returns value in string so u have to convert string to int
-        Console.WriteLine("Enter age: ");
+        //Console.WriteLine("Enter age: ");
 
-        int age = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Your Age is " + age);
+        //int age = Convert.ToInt32(Console.ReadLine());
+        //Console.WriteLine("Your Age is " + age);
+        //======================================================
 
+        DisplayPersonalDetails dp = new DisplayPersonalDetails();
+        dp.displayData();
+        //(string name, int age, string place) result = dp.getDetails();
+
+        //Console.WriteLine($"Your name is {result.name} from {result.place} with age of {result.age}");
 
     }
 }
