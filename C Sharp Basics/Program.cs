@@ -56,6 +56,28 @@ class Program
 
         //Console.WriteLine($"Your name is {result.name} from {result.place} with age of {result.age}");
 
+
+        Person p1 = new Person("Sam", 25, "New York");
+        Person p2 = new Person("John", 30, "Mumbai");
+        Person p3 = new Person("Alex", 40, "Delhi");
+
+        p1.Introduce();
+        p2.Introduce();
+        p3.Introduce();
+
+        Console.WriteLine("========================================");
+        // List and for-each loop usage
+        List<Person> persons = new List<Person>();
+
+        persons.Add(new Person("Randal", 45, "Goa"));
+        persons.Add(new Person("George", 60, "Talhasee"));
+        persons.Add(new Person("Sandy", 15, "Argentina"));
+
+        foreach (var item in persons)
+        {
+            item.Introduce();
+        }
+
     }
 }
 
